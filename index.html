@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<!-- 
+    Don't make any changes to the HTML CODE.
+    Just write the solution code in the designated sript tag
+-->
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <p>lorem</p>
+    <p>lorem</p>
+    <p>lorem</p>
+    <p>lorem</p>
+    <p>lorem</p>
+    <p>lorem</p>
+    <p>lorem</p>
+    <p>lorem</p>
+    <p>lorem</p>
+    <p>lorem</p>
+    <script>
+      // Write solution here ====================================
+      let newDiv = document.querySelectorAll("p");
+      nodeStyleMapper(newDiv , "color", "red");
+      console.log(newDiv);
+      function nodeStyleMapper(nodelist , css_property_name , css_property_value) {
+        Array.from(nodelist).forEach((ele) => {
+          ele.style[css_property_name] = css_property_value;
+        });
+      }
+    </script>
+  </body>
+
+</html>
